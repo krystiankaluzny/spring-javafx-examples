@@ -1,16 +1,17 @@
 package example;
 
 import de.felixroske.jfxsupport.FXMLController;
+import de.felixroske.jfxsupport.JavaFxSupport;
 import javafx.event.Event;
 
 @FXMLController
 public class ViewController {
     
     public void showFirstView(Event event) {
-        Main.showView(FirstView.class);
+        JavaFxSupport.showView(FirstView.class);
     }
 
     public void showSecondView(Event event) {
-        Main.showView(SecondView.class);
+        JavaFxSupport.showView(SecondView.class);
     }
 }
