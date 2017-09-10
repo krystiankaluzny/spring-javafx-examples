@@ -3,11 +3,12 @@ package example;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport;
+import de.felixroske.jfxsupport.JavaFxSupport;
 
 @SpringBootApplication
-public class Main extends AbstractJavaFxApplicationSupport{
+public class Main {
 
     public static void main(String[] args) {
-        launchApp(Main.class, FirstView.class, args);
+        JavaFxSupport.launchApp(Main.class, FirstView.class, args);
     }
 }
